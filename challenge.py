@@ -61,7 +61,7 @@ bibliotecas_df = bibliotecas_df.rename(columns={"Cod_Loc": "cod_localidad", "IdP
                                        "Localidad": "localidad", "Nombre": "nombre", "Domicilio": "domicilio", "CP": "código postal", "TelÃ©fono": "número de teléfono", "Mail": "mail", "Web": "web"})
 bibliotecas_df.insert(3, "categoría", "Biblioteca Popular")
 
-""" # 2.2.0
+# 2.2.0
 # Se crea una nuevo dataframe para concatenar los dataframes de museo, cine y Biblioteca
 nuevo_df = pd.concat([museos_df, cines_df, bibliotecas_df], axis=0)
 
@@ -111,4 +111,4 @@ plt.show()
 # Cantidad de Espacios INCAA
 espacio_df = cines_tabla_df.groupby("Provincia")["espacio_INCAA"].count()
 espacio_df.plot(kind="bar")
-plt.show() """
+plt.show()
